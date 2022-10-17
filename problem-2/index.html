@@ -5,31 +5,22 @@
 
 </head>
 <body>
-    <form>
-    <h3>Note Taker App</h3>
-    <button id="add">Add note</button>
-    
-    </form>
+    <div class="basic">
+        <form>
+            <h3>Note Taker App</h3>
+            <label for="title">Note Title</label>
+            <input type="text" id="title" placeholder="enter note title">
+            <label for="note">Note</label><br>
+            <textarea name="note" id = "note" cols="30" rows="10" placeholder="enter note"></textarea>
 
-    <script>
-        var add = document.getElementById("add");
+            <button id="add">Add note</button>
         
-
-        add.onclick = function makeNote(){
-        input = document.createElement("input");
-        input.setAttribute("type","text");
-        document.body.appendChild(input);
-
-        var sub = document.createElement("submit");
-        x.setAttribute("type", "submit");
-        document.body.appendChild(sub);
-    
-        
-        }
-
-    
-    </script>   
+        </form>
+    </div>
+    <div class="note-display">
 
 
+    </div>
+    <script src="note_script.js"></script>
 </body>
 </html>
